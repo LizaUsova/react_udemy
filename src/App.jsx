@@ -1,5 +1,5 @@
 import './App.css'
-import PetInfo from "./components/PetInfo.jsx";
+import PetInfo from "./using_props/PetInfo.jsx";
 
 function App() {
 
