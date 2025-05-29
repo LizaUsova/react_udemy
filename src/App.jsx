@@ -1,8 +1,7 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Login from "./18-controlled-input/components/Login.jsx";
-
+import Posts from "./21-jsonplaceholder-posts/components/Posts.jsx";
 
 
 function App() {
@@ -10,7 +9,7 @@ function App() {
 
     return (
         <div className="row">
-            <Login />
+           <Posts />
         </div>
     )
 }
