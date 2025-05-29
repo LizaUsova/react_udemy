@@ -1,9 +1,9 @@
 import {useState} from "react";
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Counter from "./15-logical-and-operator/components/Counter.jsx";
-import Button from "./15-logical-and-operator/components/Button.jsx";
-import ResetButton from "./15-logical-and-operator/components/ResetButton.jsx";
+import Counter from "./components/Counter.jsx";
+import Button from "./components/Button.jsx";
+import ResetButton from "./components/ResetButton.jsx";
 
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
                 <Button onClick={incrementCount}/>
                 <Button onClick={incrementCount}/>
             </div>
-                {count > 0 && <ResetButton resetCount={resetCount}/>}
+            {count > 0 && <ResetButton resetCount={resetCount}/>}
         </>
     )
 }
