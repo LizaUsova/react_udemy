@@ -1,35 +1,17 @@
 import {useState} from "react";
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Counter from "./15-logical-and-operator/components/Counter.jsx";
-import Button from "./15-logical-and-operator/components/Button.jsx";
-import ResetButton from "./15-logical-and-operator/components/ResetButton.jsx";
+import Login from "./17-uncontrolled-input/components/Login.jsx";
+
 
 
 function App() {
-    const [count, setCount] = useState(0)
 
-    const incrementCount = () => {
-        setCount(count + 1)
-    }
-
-    const resetCount = () => {
-        setCount(0)
-    }
 
     return (
-        <>
-            <div className="container my-4">
-                <Counter count={count}/>
-            </div>
-            <div className="d-flex gap-2">
-                <Button onClick={incrementCount} />
-                <Button onClick={incrementCount}/>
-                <Button onClick={incrementCount}/>
-                <Button onClick={incrementCount}/>
-            </div>
-                {count > 0 && <ResetButton resetCount={resetCount}/>}
-        </>
+        <div className="row">
+            <Login />
+        </div>
     )
 }
 
