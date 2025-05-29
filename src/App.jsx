@@ -1,13 +1,31 @@
+import {useState} from "react";
 import './App.css'
-import PetInfo from "./using_props/PetInfo.jsx";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Button from "./12-state-via-props/components/Button.jsx";
+import Counter from "./12-state-via-props/components/Counter.jsx";
 
 function App() {
+    const [count, setCount] = useState(0);
+
+    const incrementCount = () => {
+        setCount(count + 1)
+    }
+
+    const decrementCount = () => {
+        setCount(count - 1)
+    }
+
 
   return (
-    <div>
-      <PetInfo animal="cat" age="2" />
-      <PetInfo animal="dog" age="5" />
-    </div>
+      <>
+        <Counter count={count} />
+        <div className="d-flex flex-wrap gap-2">
+          <Button onClick={incrementCount} text="increment" />
+          <Button onClick={decrementCount} text="decrement" />
+            <Button onClick={incrementCount} text="increment" />
+          <Button onClick={decrementCount} text="decrement" />
+        </div>
+      </>
   )
 }
 
