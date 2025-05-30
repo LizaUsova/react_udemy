@@ -3,7 +3,7 @@ function Post(props) {
     const { userId, title, body } = props;
 
     return (
-    <div className="card w-75 mb-3">
+    <div className="card w-100 mb-3">
         <div className="card-body">
             <h5 className="card-title">{userId}</h5>
             <h3 className="card-text">{title}</h3>
