@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Posts from "./21-jsonplaceholder-posts/components/Posts.jsx";
+import Posts from "./22-useEffect-async-await/components/Posts.jsx";
 
 
 function App() {
